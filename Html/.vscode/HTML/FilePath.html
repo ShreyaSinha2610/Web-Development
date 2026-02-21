@@ -1,0 +1,26 @@
+root
+|_>lion.png
+|_>tiger.png
+|->Alpha
+   |_>cat.png
+   |_>dog.png
+   |->Beta
+      |_>monkey.png
+      |_>panda.png
+      |->photos
+         |_>photo1.png
+         |_>photo2.png
+
+
+To go from lion.png to photo1.png, the relative path would be:
+Alpha/Beta/photos/photo1.png
+
+To go from tiger.png to panda.png, the relative path would be:
+Alpha/Beta/panda.png
+
+//To go down we use / and to go up we use ../
+To go from cat.png to tiger.png, the relative path would be:
+../tiger.png
+
+To go from panda.png to tiger.png, the relative path would be:
+../../tiger.png

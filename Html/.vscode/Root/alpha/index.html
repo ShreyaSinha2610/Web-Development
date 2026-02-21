@@ -1,0 +1,23 @@
+<!-- To go from index.html->first.png, the relative path would be:
+
+<img src="Beta/photos/first.png" />
+To go from index.html->lion.png, the relative path would be:
+<img src="../lion.png" />
+To go from first.png to index.html, the relative path would be:
+<img src="../../index.html" />
+To go from first.png to lion.png, the relative path would be:
+<img src="../../../lion.png" /> -->
+
+//Absolute Path
+
+<img
+  src="/Users/shreyasinha/Desktop/Web Development/Html/.vscode/Root/alpha/Beta/photos/first.png"
+  alt="first"
+/>
+We can also use absolute paths to access files. Absolute paths start from the
+root directory of the file system. In this case, we can use the absolute path to
+access the first.png image as shown above. However, using absolute paths is not
+recommended as it can lead to issues when moving files or deploying the website
+to a different server. It is generally better to use relative paths for better
+portability and maintainability of the code.
+<img src="./dog.png" />
