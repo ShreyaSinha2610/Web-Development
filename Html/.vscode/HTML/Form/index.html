@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <!-- //We use name attribute to identify form elements and their values when
+      the form is submitted. The name attribute is used to specify the name of
+      the form element, which is sent to the server when the form is submitted.
+      It is important to use unique names for each form element to avoid
+      confusion and ensure that the correct data is sent to the server. -->
+
+      <!-- We use for attribute in label to associate the label with a specific form
+      element. The for attribute should match the id of the form element it is
+      associated with. This allows users to click on the label to focus on the
+      corresponding form element, improving accessibility and usability of the
+      form.-->
+
+      <!-- for lgane se wo input se link hota h through id -->
+      <!-- eg - name label pr click krne se name input pr focus hoga  -->
+
+      <!-- when we click on any radio button and submit the form, the value of the selected radio button will be sent to the server with the value on, but we need to specify the value attribute for each radio button to ensure that the correct value is sent to the server. For example, we can set the value attribute to "male" for the male radio button and "female" for the female radio button. This way, when the form is submitted, the server will receive the correct value for the selected radio button.
+       for that we use a value in the input element -->
+      <label for="name">Name</label>
+      <input type="text" name="userName" id="name" />
+      <br />
+      <label for="age">Age:</label>
+      <input type="number" name="userAge" id="age" />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" name="userEmail" id="email" />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" name="userPassword" id="password" />
+      <br />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="female" />
+      <br />
+      <label for="subject">Subject:</label>
+      <label for="maths">Maths</label>
+      <input type="checkbox" name="maths" id="maths" value="maths" />
+      <label for="science">Science</label>
+      <input type="checkbox" name="science" id="science" value="science" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
