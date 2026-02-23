@@ -17,6 +17,7 @@
         id="firstname"
         name="firstname"
         placeholder="e.g., Arjun"
+        required
       />
       <br /><br />
       <label for="lastname">Last Name:</label>
@@ -25,10 +26,11 @@
         id="lastname"
         name="lastname"
         placeholder="e.g., Kumar"
+        required
       />
       <br /><br />
       <label for="DOB">Date of Birth:</label>
-      <input type="date" id="DOB" name="DOB" />
+      <input type="date" id="DOB" name="DOB" required />
       <br /><br />
       <label for="gender">Gender</label>
       <br />
@@ -46,7 +48,7 @@
       <br /><br />
       <label for="photo">Upload Your Photo:</label>
       <br />
-      <input type="file" id="photo" name="photo" />
+      <input type="file" id="photo" name="photo" required />
       <br /><br />
       <hr />
       <h2>Contact Information</h2>
@@ -56,6 +58,7 @@
         id="email"
         name="email"
         placeholder="e.g., you@example.com"
+        required
       />
       <br /><br />
       <label for="phone">Phone Number:</label>
@@ -64,6 +67,7 @@
         id="phone"
         name="phone"
         placeholder="e.g., 9876543210"
+        required
       />
       <br /><br />
       <label for="address">Mailing Address:</label>
@@ -74,6 +78,7 @@
         rows="4"
         cols="20"
         placeholder="Street Address, City"
+        required
       ></textarea>
       <br />
       <br />
@@ -85,7 +90,7 @@
       each option is defined with an <code>&lt;option&gt;</code> element. The
       <code>value</code> attribute of each option specifies the value that will
       be sent to the server when the form is submitted. -->
-      <select id="course" name="course">
+      <select id="course" name="course" required>
         <option value="">--Select a Course--</option>
         <option value="computerScience">Computer Science</option>
         <option value="businessAdministration">Business Administration</option>
@@ -100,10 +105,17 @@
         id="sports"
         name="extraCurricular"
         value="sports"
+        required
       />
       <label for="sports">Sports</label>
       <br />
-      <input type="checkbox" id="music" name="extraCurricular" value="music" />
+      <input
+        type="checkbox"
+        id="music"
+        name="extraCurricular"
+        value="music"
+        required
+      />
       <label for="music">Music & Arts</label>
       <br />
       <input
@@ -111,6 +123,7 @@
         id="technologyClubs"
         name="extraCurricular"
         value="technologyClubs"
+        required
       />
       <label for="technologyClubs">Technology Clubs</label>
       <br />
@@ -119,16 +132,17 @@
         id="volunteering"
         name="extraCurricular"
         value="volunteering"
+        required
       />
       <label for="volunteering">Volunteering</label>
       <br /><br />
       <hr />
       <h2>Create Your Account</h2>
       <label for="password">Create a Password:</label>
-      <input type="password" id="password" name="password" />
+      <input type="password" id="password" name="password" required />
       <br /><br />
       <label for="securityQuestion">Security Question:</label>
-      <select id="security" name="security">
+      <select id="security" name="security" required>
         <option value="">--Select a Security Question--</option>
         <option value="motherMaidenName">
           What is your mother's maiden name?
@@ -159,6 +173,31 @@
         max="100"
         value="500"
       /> -->
+
+      <!-- id — gives an element a unique identifier. Used for targeting with CSS (#myId), JavaScript (getElementById), and linking with for.
+      <input id="email" type="text" />
+
+     for — used on <label> to associate it with an input via its id. Clicking the label focuses/activates the input.
+    <label for="email">Email</label><input id="email" type="text" />
+
+     name — identifies the field when the form is submitted. The server receives data as name=value pairs.
+      <input name="username" type="text" /> Form submits: username=whatever_user_typed 
+      
+      value — the current value of the input or the value sent on submission.
+      <input
+        name="color"
+        value="red"
+        type="radio"
+      /> Form submits: color=red 
+      How they work together:
+      <form action="/submit">
+        <label for="user">Username</label>
+        <input id="user" name="username" value="" type="text" />
+        <button type="submit">Submit</button>
+      </form>
+      for="user" + id="user" → clicking "Username" label focuses the input
+      name="username" → server receives username=... value → holds whatever the
+      user typed --->
     </form>
   </body>
 </html>
