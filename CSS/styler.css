@@ -6,7 +6,7 @@ h1,h2{
     font-size: large;
     background-color: rgb(173, 44, 95);
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* (if our browser doesn't have first one, will use second, otherwise third .....) */ */
+    /* (if our browser doesn't have first one, will use second, otherwise third .....) */ 
 }
 .h2,h3{
     font-size: small;
