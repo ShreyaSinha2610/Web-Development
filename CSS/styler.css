@@ -1,0 +1,53 @@
+h1,h2{
+    font-size: medium;
+    background-color: aquamarine;
+}
+#h2{
+    font-size: large;
+    background-color: rgb(173, 44, 95);
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* (if our browser doesn't have first one, will use second, otherwise third .....) */ */
+}
+.h2,h3{
+    font-size: small;
+    background-color: #567890;
+}
+
+/* class<tag<id */
+/* pixcel - Picture Element - There is no fixed size of pixcel, it depends on the size of the screen */
+
+/* Font size units
+1. em
+ font-size: 1em(em means sizein multiple of it's parent )
+eg - <ol>
+       <li>
+So, li is the child and ul is the parent
+If we define sixe of ol = 60px
+and li be 2 em = 2*60 = 120px */
+
+/* 
+2. rem
+ font-size: 1rem(rem means sizein multiple of it's root )
+eg - <ol>
+So, ol is the child and html is the parent
+If we define sixe of html = 60px
+and li be 2rem = 2*60 = 120px */ 
+
+/* 
+3. vw(viewport width) - viewport -It represents a percentage of the width of the viewport or the visible area of the web browser.
+h1{
+    font-size : 1vw = 1% of total width of viewport
+}
+4. vh(viewport height) - viewport -It represents a percentage of the hight of the viewport or the visible area of the web browser.
+h1{
+    font-size : 5vh = 5% of total height of viewport
+} */
+
+/*
+5. %
+ font-size: 50%(% means that much % it's parent )
+eg - <ol>
+       <li>
+So, li is the child and ul is the parent
+If we define size of ol = 60px
+and li be 20% = (2*60)/100 = 1.2px  */
