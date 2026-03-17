@@ -1,0 +1,66 @@
+h1{
+    background-color: blueviolet;
+    /* height: 300px; */
+    width: 300px;
+
+    /* border-width: 5px;
+    border-color:black;
+    border-style: solid; */
+
+    border: 10px solid green; 
+    /* replaces the above 3 lines */
+    padding: 10px;
+
+    /* padding - the space between an element's content and its border . If we just mention padding then it will increase that much pixel in all the directions */
+    /* margin -  define the distance between an element's border and the surrounding elements .If we just mention margin then it will increase that much pixel in all the directions */
+    /* Ways to show padding and margin
+     padding: 2px;
+     padding: 3px 4px 6px 5px;  (top right bottom left) 
+     padding: 5px 6px; (top bottom right left)
+     padding-right
+     padding-left;
+     padding-top;
+     padding-bottom; */
+
+
+
+}
+h2{
+    background-color: pink;
+    border: 2px solid blue;
+    padding: 4px;
+    margin: 10px;
+
+}
+                         /* | content|->border|->margin
+                           |
+                          padding */
+            /* content and border k beech ka distance = padding
+            border and surrounding ele k border beech ka dis = margin */
+p{
+    background-color: aquamarine;
+    border: 5px solid yellow;
+   /* padding: 6px; */
+    margin: 7px;
+    border-top: 4px;
+    /* (top right bottom left) */
+    /* padding: 10px 20px 30px 40px; */
+    /* (top bottom right left) */
+    padding: 20px 40px;
+    border-radius: 40px;
+    /* display: inline; */
+}
+
+
+
+/* Box Model
+
+border : width border-style border-color
+border-radius
+padding - padding l, r, top, bottom
+margin - padding l, r, top, bottom */
+
+span{
+    color: brown;
+}
+
